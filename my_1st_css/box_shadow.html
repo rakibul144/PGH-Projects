@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0066ff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .card {
+      width: 280px;
+      background: rgb(0, 245, 171);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 50px 80px 25px rgba(0, 0, 0, 0.15);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      transform: translateY(-8px);
+    }
+
+    .card h2 {
+      color: #333;
+      margin: 15px 0;
+    }
+
+    .card p {
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #4a6cf7;
+      color: rgb(123, 240, 13);
+      padding: 10px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgb(203, 8, 8);
+    }
+
+    .btn:hover {
+      background: #3b5bd1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>সুন্দর কার্ড</h2>
+    <p>এখানে box-shadow ব্যবহার করা হয়েছে। Hover করলে আরও সুন্দর দেখাবে।</p>
+    <button class="btn">ক্লিক করুন</button>
+  </div>
+
+</body>
+</html>

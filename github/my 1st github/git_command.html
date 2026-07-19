@@ -1,0 +1,129 @@
+১. Project তৈরি
+       │
+       ▼
+git init
+       │
+       ▼
+ফাইল তৈরি / Edit
+       │
+       ▼
+git status
+       │
+       ▼
+git add .
+       │
+       ▼
+git commit -m "message"
+       │
+       ▼
+git remote add origin <repo-url>   (শুধু প্রথমবার)
+       │
+       ▼
+git branch -M main                 (প্রয়োজনে একবার)
+       │
+       ▼
+git push -u origin main            (প্রথমবার)
+       │
+       ▼
+GitHub Repository
+
+
+এরপর থেকে প্রতিবার নতুন পরিবর্তন করলে
+শুধু এই তিনটি কমান্ডই যথেষ্ট:
+git add .
+git commit -m "Describe your changes"
+git push
+
+
+
+| Command                                  | এক লাইনে কাজ                                                                        |
+| ---------------------------------------- | ----------------------------------------------------------------------------------- |
+| `git init`                               | বর্তমান ফোল্ডারকে একটি Git Repository বানায়।                                       |
+| `git status`                             | Repository-এর বর্তমান অবস্থা দেখায় (Modified, Staged, Untracked ইত্যাদি)।          |
+| `git add .`                              | বর্তমান ফোল্ডারের সব পরিবর্তন Stage করে।                                            |
+| `git add <filename>`                     | নির্দিষ্ট ফাইলটিকে Stage করে।                                                       |
+| `git commit -m "message"`                | Stage করা পরিবর্তনগুলোকে একটি নতুন Commit হিসেবে সংরক্ষণ করে এবং একটি Message দেয়। |
+| `git remote add origin <repository-url>` | Local Repository-এর সাথে GitHub Remote Repository-এর সংযোগ তৈরি করে।                |
+| `git remote -v`                          | কোন Remote Repository যুক্ত আছে তা দেখায়।                                          |
+| `git branch`                             | বর্তমান Repository-এর সব Branch দেখায়।                                             |
+| `git branch -M main`                     | বর্তমান Branch-এর নাম `main` করে দেয়।                                              |
+| `git push -u origin main`                | প্রথমবার Local `main` Branch-এর Commit GitHub-এ Push করে এবং Tracking সেট করে।      |
+| `git push`                               | নতুন Commit-গুলো GitHub-এ আপলোড করে (Tracking সেট থাকলে)।                           |
+
+
+
+
+আমার পরামর্শ হলো, এখন Git-এর পরবর্তী গুরুত্বপূর্ণ ৫টি command শিখো:
+
+git clone – GitHub থেকে Project Download করা।
+git pull – GitHub-এর সর্বশেষ পরিবর্তন Local-এ আনা।
+git log – Commit History দেখা।
+git restore – ভুল পরিবর্তন বা Stage বাতিল করা।
+git diff – কী কী পরিবর্তন হয়েছে তা দেখা।
+
+
+
+পরিস্থিতি ১: একদম নতুন Project (প্রথমবার)
+ধরো তুমি নতুন একটি Folder তৈরি করলে:
+My Project/
+এখন এই Folder-এ Git নেই, GitHub-এর সাথেও কোনো সংযোগ নেই।
+তখন শুধু প্রথমবার এই ধাপগুলো করবে।
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main          # যদি branch-এর নাম main না হয়
+git remote add origin <GitHub Repository URL>
+git push -u origin main
+এই কাজগুলো জীবনে একবারই করতে হয় একটি Project-এর জন্য।
+
+
+পরিস্থিতি ২: একই Project-এ পরের দিন আবার কাজ করতে বসলে
+ধরো আজ Project বন্ধ করলে।
+আগামীকাল আবার VS Code খুলে একই Project-এ কাজ করবে।
+তখন git init বা git remote add origin আবার করতে হবে না।
+শুধু:
+Project Folder খুলবে।
+কোড লিখবে।
+তারপর:
+git add .
+git commit -m "What you changed"
+git push
+
+
+🟢 নতুন Project (একবার)
+Project তৈরি
+      ↓
+git init
+      ↓
+git add .
+      ↓
+git commit -m "Initial commit"
+      ↓
+git remote add origin <url>
+      ↓
+git branch -M main
+      ↓
+git push -u origin main
+
+
+🔵 একই Project-এ প্রতিদিন
+Project খুললাম
+      ↓
+(প্রয়োজনে git pull)
+      ↓
+Code লিখলাম
+      ↓
+git add .
+      ↓
+git commit -m "Describe changes"
+      ↓
+git push
+
+
+
+🎯 মনে রাখার সহজ নিয়ম
+একটি নতুন Project-এর জন্য:
+git init → git remote add origin → git push -u origin main একবারই।
+প্রতিদিনের কাজের জন্য:
+git add → git commit → git push বারবার।
+এটাই বাস্তবে বেশিরভাগ ডেভেলপারদের দৈনন্দিন Git workflow।

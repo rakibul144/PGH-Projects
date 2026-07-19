@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+         .container{ 
+            display: flex; 
+            /* display: flex; mane holo container class er vitore ke flex box e convert kore dibe. */
+           
+        }
+        .container div{
+            /* .container div er mane holo container class er vitore je div gulo ache segulo. .container div er vitore je div gulo ache segulo ke target korbe. */
+            border: 2px solid black;
+            height: 100px;
+            width: 200px;
+            font-size: 3em;
+        }
+        .box{
+            border: 2px solid violet;
+            height: 100px;
+            width: 200px;
+            font-size: 3em;
+        }
+        .box-container{
+            display: flex;
+            gap: 50px;
+        }
+        /* display flex use ko korar por div gulo ek line e chole asbe. niche niche jabe na . pasapasi bosbe*/
+        .user-container{
+            display: flex;
+            /* display: flex; mane holo user-container class er vitore ke flex box e convert kore dibe. */
+            /* gap: 50px; */
+            justify-content: space-between;
+            /* justify-content: space-between; mane holo user-container class er vitore je div gulo ache segulo ke space between kore dibe. */
+         /* justify-content: space-around; */
+            /* justify-content: space-around; mane holo user-container class er vitore je div gulo ache segulo ke space around kore dibe. */
+        }
+        .user {
+            border: 2px solid red;
+            height: 100px;
+            width: 200px;
+            font-size: 3em;
+            /* 👉 .user হচ্ছে child (item), container না।
+            justify-content only works on flex container, not on normal elements. */
+            /* justify-content: space-between; ei jonnne ei line kaj kore ni ei khane*/
+             /* justify-content: space-between; mane holo user class er vitore je div gulo ache segulo ke space between kore dibe. */
+        }
+        .member{
+            border: 2px solid green;
+            height: 100px;
+            width: 200px;
+            font-size: 3em;
+        }
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap;use korar por jodi ek line e jayga na hoy  div gulo ek line e chole asbe na, niche niche jabe. pasapasi bosbe na. */
+            gap: 10px;
+        }
+         /* flex-wrap: wrap; mane holo card class er vitore je div gulo ache segulo ke wrap kore dibe. mane holo ek line e jabe na, niche niche jabe. */
+         /* gap: 10px; mane holo card class er vitore je div gulo ache segulo ke 10px gap kore dibe. */
+         /* flex-wrap: wrap; use korar por div gulo ek line e chole asbe na, niche niche jabe. pasapasi bosbe na. */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <div class="box-container">
+        <!-- .box{ $ }*6 -->
+         <div class="box"> 1 </div>
+         <div class="box"> 2 </div>
+         <div class="box"> 3 </div>
+         <div class="box"> 4 </div>
+         <div class="box"> 5 </div>
+         <div class="box"> 6 </div>
+    </div>
+
+    <div class="user-container">
+        <!-- .user-container{ $ }*6 -->
+        
+         <!-- .user{user-$}*6 -->
+          <div class="user">user-1</div>
+          <div class="user">user-2</div>
+          <div class="user">user-3</div>
+          <div class="user">user-4</div>
+          <div class="user">user-5</div>
+    </div>
+        <!-- "#box-container" kore like enter dile "<div id="box-container"></div>""eita pabo -->
+     <!-- ".box-container" likhe enter dile "<div class="box-container"></div>" eita pabo. id er age "#" use korte hoy, class er age "." use korte hoy. id er value unique hoy, class er value unique hoy na -->
+    <!-- <div class="box-containee"></div> -->
+     <div class="card">
+ 
+    <div class="member">member-1</div>
+    <div class="member">member-2</div>
+    <div class="member">member-3</div>
+    <div class="member">member-4</div>
+    <div class="member">member-5</div>
+    <div class="member">member-6</div>
+    <div class="member">member-7</div>
+    <div class="member">member-8</div>
+    <div class="member">member-9</div>
+    <div class="member">member-10</div>
+    <div class="member">member-11</div>
+    <div class="member">member-12</div>
+    <div class="member">member-13</div>
+    <div class="member">member-14</div>
+    <div class="member">member-15</div>
+    <div class="member">member-16</div>
+    <div class="member">member-17</div>
+    <div class="member">member-18</div>
+    
+    </div>  
+    
+</body>
+</html>
+<br>
+  https://chatgpt.com/share/6a053470-49c4-83e9-ab30-c3aa41978771   
+

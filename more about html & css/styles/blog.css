@@ -1,0 +1,16 @@
+nav li{
+    list-style: none; 
+    display: inline; 
+    /* eitar karone list item gulo ek line e show korbe, and list er samne je dot thake ta remove kore dibe */
+    margin-right: 15px;
+
+}
+nav li :hover{
+    /* hover mane holo mouse er pointer jokhon kono element er upore asbe tokhon ki hobe, eikhane ami list item er upore mouse pointer asle text er color change kore red kore dichi, and background color change kore lightskyblue kore dichi */ */
+    color: red; background-color: lightskyblue;
+}
+nav li a{
+    text-decoration: none; 
+    /* eitar mane holo link er under line ta remove kora, and color change kora */
+    color: blue;
+}

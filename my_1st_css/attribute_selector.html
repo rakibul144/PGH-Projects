@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* 1. Select input with type="text" */
+    input[type="text"] {
+      background-color: lightblue;
+    }
+
+    /* 2. Select links with target attribute */
+    a[target] {
+      color: red;
+    }
+
+    /* 3. Select images starting with https */
+    img[src^="https"] {
+      border: 3px solid green;
+    }
+
+    /* 4. Select links ending with .pdf */
+    a[href$=".pdf"] {
+      color: orange;
+    }
+
+    /* 5. Select class containing "note" */
+    p[class*="note"] {
+      color: purple;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Attribute Selector Example</h2>
+
+  <!-- input -->
+  <input type="text" placeholder="Text input">
+  <input type="password" placeholder="Password input">
+
+  <br><br>
+
+  <!-- links -->
+  <a href="https://google.com" target="_blank">Open Google</a><br>
+  <a href="file.pdf">Download PDF</a>
+
+  <br><br>
+
+  <!-- image -->
+  <img src="https://via.placeholder.com/100">
+
+  <br><br>
+
+  <!-- paragraph -->
+  <p class="note">This is a note paragraph</p>
+  <p class="my-note-text">Another note paragraph</p>
+  <p>This is normal paragraph</p>
+
+</body>
+</html>

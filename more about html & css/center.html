@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Center Flex
+
+    </title>
+    <style>
+        .composition {
+
+            background-color: lightcoral;
+            border: 1px solid black;
+            width: 500px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+        .rock {
+            background-color: lightyellow;
+            padding: 10px;
+            width: 480px;
+
+        }
+
+        .container {
+            background-color: lightgreen;
+            display: flex;
+            /* flex-wrap: wrap; */
+            height: 1000px;
+            justify-content: center;
+            gap: 20px;
+            align-items: flex-end;
+            /*align-items: center;mane holo vertical center kora. mane holo je box gulo vertical center e thakbe.justify-content: center; mane holo horizontal center kora. mane holo je box gulo horizontal center e thakbe. gap: 20px; mane holo box gulo er modhye 20px gap thakbe. flex-wrap: wrap; mane holo jodi box gulo ek line e na thake tahole box gulo next line e chole jabe. */
+        }
+
+        .box {
+            background-color: lightblue;
+            border: 2px solid black;
+            height: 100px;
+            width: 200px;
+            font-size: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="composition">
+        <div class="rock">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam inventore sint vitae
+            blanditiis. Corrupti iusto inventore ducimus odio adipisci mollitia, atque suscipit dolorum dolor magnam.
+            Numquam reiciendis voluptatem libero doloribus?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias harum facere minus iste ipsa error. Animi,
+            non excepturi. Laudantium, exercitationem? Laboriosam cum quo quia quisquam corporis recusandae doloribus
+            placeat cupiditate?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi corrupti veritatis doloremque architecto
+            itaque tempora aut ducimus atque non rem, quis quisquam nisi minima ut eaque, fugiat quo, numquam enim.
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">something 1</div>
+        <div class="box">something 2</div>
+
+    </div>
+</body>
+
+</html>

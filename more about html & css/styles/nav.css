@@ -1,0 +1,26 @@
+nav ul 
+{
+    display: flex;
+    gap: 22px;
+    /* margin-right: auto; eitao onek ta  same kaj korbe jeita kina gap koreche... */
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #10c284;
+}
+
+nav ul li a 
+{
+    
+     display: block; 
+    color: white; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+    /* eita karone a tag er niche underline ta chole jabe, and text er color white hoye jabe, and text center e thakbe, and padding diye text er charpashe space create kore dichi... */
+}
+nav li:hover{
+    /* hover mane holo mouse er pointer jokhon kono element er upore asbe tokhon ki hobe, eikhane ami list item er upore mouse pointer asle text er color change kore red kore dichi, and background color change kore lightskyblue kore dichi */ 
+    color: red; background-color:rebeccapurple;
+}
